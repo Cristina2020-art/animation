@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<style>
+body
+{
+background:black;
+justify-content:center;
+align-items:center;
+}
+.d1
+{
+background:navy;
+width:200px;
+height:300px;
+position:absolute;
+top:20%;
+left:25%;
+border-radius:10px;
+overflow:hidden;
+}
+.d2
+{
+background:linear-gradient(#FFFF00,#ff0000,#5cfa8b,#ffff,#731010);
+width:70px;
+height:400px;
+position:absolute;
+top:-30px;
+left:76px;
+overflow: hidden;
+animation:animate 2s linear infinite;
+}
+.d1::after
+{
+content:'';
+position:absolute;
+inset:3px;
+background:navy;
+border-radius:10px;
+}
+h1
+{
+color:white;
+position:absolute;
+top:30%;
+left:38%;
+font-size:70px;
+z-index:1;
+border:solid red 3px;
+border-top:solid orange 3px;
+border-left:solid green 3px;
+border-right:solid white 3px;
+border-radius:10px;
+padding:5px;
+}
+span
+{
+color:orange;
+font-size:40px;
+position:absolute;
+top:60%;
+left:28%;
+animation:span 3s linear infinite 0.5s;
+}
+@keyframes span{
+0%{
+transform:scale(1,0);
+}
+50%{
+transform:scale(1,1);
+}
+100%{
+transform:scale(-1,-0);
+}
+}
+@keyframes animate{
+0%{
+transform:rotate(0deg);
+}
+50%{
+transform:rotate(180deg);
+}
+100%{
+transform:rotate(360deg);
+}
+</style>
+</head>
+<body>
+<h1>01</h1>
+<div class="d1">
+<div class="d2"></div>
+</div>
+<span></span>
+</body>
+</html>
